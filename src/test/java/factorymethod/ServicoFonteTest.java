@@ -6,13 +6,13 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ServicoFonteTest {
     @Test
-    void deveEnviarCaminhao() {
+    void deveSolicitarPeca() {
         IServico servico = ServicoFactory.obterServico("Fonte");
         assertEquals("Solicitação de reposição da fonte confirmada.", servico.solicitarpeca());
     }
 
     @Test
-    void deveRecolherCaminhao() {
+    void deveEncaminharProducao() {
         IServico servico = ServicoFactory.obterServico("Fonte");
         assertEquals("As fontes foram encaminhadas com sucesso!", servico.encaminharproducao());
     }

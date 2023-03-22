@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ServicoFactoryTest {
     @Test
-    void deveRetornarExcecaoParaServicoInexistente() {
+    void deveRetornarServicoInexistente() {
         try {
             IServico servico = ServicoFactory.obterServico("Computador");
             fail();
@@ -16,7 +16,7 @@ class ServicoFactoryTest {
     }
 
     @Test
-    void deveRetornarExcecaoParaServicoInvalido() {
+    void deveRetornarServicoInvalido() {
         try {
             IServico servico = ServicoFactory.obterServico("Memoria");
             fail();

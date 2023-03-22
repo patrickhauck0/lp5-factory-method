@@ -6,13 +6,13 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ServicoGabineteTest {
     @Test
-    void deveEnviarCaminhao() {
+    void deveSolicitarPeca() {
         IServico servico = ServicoFactory.obterServico("Gabinete");
         assertEquals("Solicitação de reposição do gabinete confirmado.", servico.solicitarpeca());
     }
 
     @Test
-    void deveRecolherCaminhao() {
+    void deveEncaminharProducao() {
         IServico servico = ServicoFactory.obterServico("Gabinete");
         assertEquals("Os gabinetes foram encaminhados com sucesso!", servico.encaminharproducao());
     }

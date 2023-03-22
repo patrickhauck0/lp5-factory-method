@@ -6,13 +6,13 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ServicoPlacaMaeTest {
     @Test
-    void deveEnviarCaminhao() {
+    void deveSolicitarPeca() {
         IServico servico = ServicoFactory.obterServico("PlacaMae");
         assertEquals("Solicitação de reposição da placa mãe confirmada.", servico.solicitarpeca());
     }
 
     @Test
-    void deveRecolherCaminhao() {
+    void deveEncaminharProducao() {
         IServico servico = ServicoFactory.obterServico("PlacaMae");
         assertEquals("As placas mãe foram encaminhadas com sucesso!", servico.encaminharproducao());
     }
